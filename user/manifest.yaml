@@ -31,9 +31,11 @@ spec:
   template:
     metadata: 
       labels:
-        project: roboshop
+        project: roboshop   
         component: user
         tier: backend
+
+        
     
     spec:
       containers:

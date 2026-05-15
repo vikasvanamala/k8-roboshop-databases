@@ -64,6 +64,9 @@ spec:
       containers:
       - name: mysql
         image: joindevops/mysql:v1
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: RoboShop@1
         volumeMounts:
         - name: mysql
           mountPath: /var/lib/mysql
@@ -74,6 +77,8 @@ spec:
         - name: mysql-config
           configMap:
             name: mysql
+
+
   # This is PVC
   volumeClaimTemplates:
   - metadata:
