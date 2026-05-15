@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: joindevops/mysql:v1
+        image: vikasvanamala/mysql:v1
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: RoboShop@1
