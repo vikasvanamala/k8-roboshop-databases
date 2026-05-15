@@ -66,7 +66,7 @@ spec:
         image: vikasvanamala/mysql:v1
         volumeMounts:
         - name: mysql
-          mountPath: /data/db
+          mountPath: /var/lib/mysql
         - name: mysql-config
           mountPath: /etc/mysql/conf.d/my.cnf
           subpath: my.cnf
