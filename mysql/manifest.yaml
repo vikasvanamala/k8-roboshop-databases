@@ -69,7 +69,7 @@ spec:
           mountPath: /var/lib/mysql
         - name: mysql-config
           mountPath: /etc/mysql/conf.d/my.cnf
-          subpath: my.cnf
+          subPath: my.cnf
       volumes:
       - name: mysql-config
         configMap:
